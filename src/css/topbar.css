@@ -1,0 +1,41 @@
+.topbar{
+    margin-left: 4em;
+    width: calc(100% - 4em);
+    min-height: 4em;
+    font-family: sans-serif;
+    background: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition-duration: 1s;
+}
+.topbar > a {
+    margin-right: 1em;
+    position: relative;
+    color: #4d4d4e;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+  
+  .topbar > a:hover, .topbar .active{
+    color: #7ad71f;
+  }
+.topbar > a:before, .topbar .active:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #7ad71f;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .topbar > a:hover:before, .topbar .active:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }

@@ -1,0 +1,25 @@
+.social-link{
+    margin: 0.05em 0;
+    width: 50%;
+    height: 1.5em;
+    display: block;
+    color: #4d4d4e;
+    text-decoration: none;
+    font-size: 1em;
+    transition-duration: 0.75s;
+}
+.social-link:hover{
+    transition-duration: 0.75s;
+}
+.fb:hover{
+    color: #385599;
+}
+.insta:hover{
+    color: #d62976;
+}
+.linked-in:hover{
+    color: #0077b5;
+}
+.github:hover{
+    color: #fff;
+}
