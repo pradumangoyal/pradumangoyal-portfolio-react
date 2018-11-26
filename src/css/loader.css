@@ -1,0 +1,14 @@
+.loader-wrapper{
+    height: 100%;
+    width: 100%;
+}
+.spinner-container{
+    color: #fff;
+    font-size: 1.5em;
+}
+.spinner-text{
+    margin-top: 1em;
+    font-size: 1em;
+    color: #fff;
+    font-family: sans-serif;
+}
