@@ -1,3 +1,32 @@
+
+.skills-col{
+    display: block;
+    margin: 0.25em 0;
+    color: #4d4d4e;
+}
+.skills-heading{
+    display: inline-block;
+    margin-top: 0.75em;
+    font-size: 1.25em;
+    padding: 2px 3px;
+    transition-duration: 0.25s;
+    cursor: default;
+    text-transform: uppercase;
+}
+.skills-heading:hover{
+    background: #7ad71f;
+    transform: skew(15deg);
+    transition-duration: 0.25s;
+}
+.skills-desc{
+    font-size: 1em;
+}
+.skills-desc-element{
+    display: inline-block;
+    transition-duration: 0.25s;
+    cursor: default;
+    padding-left: 0.5em;
+}
 .about-me-wrapper{
     width: 100%;
     height: 100%;
@@ -5,4 +34,74 @@
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
+}
+.about-me-container{
+    width: 100%;
+    height: 100%;
+    max-width: 80em;
+    display: flex;
+
+}
+.skills{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2em;
+}
+.about-me-content{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2em;
+}
+.about-me-heading{
+    font-size: 2.5em;
+}
+.about-me-desc{
+    margin-top: 1em;
+    color: #4d4d4e;
+    line-height: 2em;
+    cursor: default;
+}
+.about-me-desc > span{
+    transition-duration: 0.25s;
+}
+.about-me-desc > span:hover{
+    color: #7ad71f;
+    transition-duration: 0.25s
+}
+.about-me-desc > a{
+    color: #7ad71f;
+    text-decoration: none;
+}
+.about-me-resume{
+    margin: 0.5em 0;
+    padding: 0.5em;
+    font-size: 1em;
+    color: #252627;
+    background: #101015;
+    border: #101015;
+    transition-duration: 0.25s;
+}
+.about-me-resume .fas{
+    padding-right: 0.5em;
+}
+.about-me-resume:hover{
+    opacity: 0.95;
+    color: #7ad71f;
+    transition-duration: 0.25s;
+    cursor: pointer;
+}
+.about-me-resume:focus{
+    border: none;
 }

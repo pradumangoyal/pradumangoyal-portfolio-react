@@ -1,0 +1,119 @@
+
+.contact-me-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.contact-me-container{
+    width: 100%;
+    height: 100%;
+    max-width: 100em;
+    display: flex;
+
+}
+.contact-me-map{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1em;
+}
+.contact-me-content{
+    padding-left: 1em;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    margin-right: 1em;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-me-content > div{
+    width: 75%;
+}
+.contact-me-heading{
+    font-size: 2em;
+}
+.contact-me-input-container{
+    margin: 0.5em 0;
+    display: flex;
+}
+.half-width{
+    width: 50%;
+}
+.half-width[name='email']{
+    margin-left: 0.5em;
+}
+.full-width{
+    width: 100%
+}
+.contact-me-input{
+    height: 2.5em;
+    padding: 0 1em;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 1em;
+    border-radius: 2px;
+    background: #37393b;
+    color: #8d8d8d;
+
+}
+.contact-me-textarea{
+    padding: 0 1em;
+    box-sizing: border-box;
+    border: 0;
+    line-height: 1.5em;
+    font-size: 1.25em !important;
+    border-radius: 2px;
+    background: #37393b;
+    color: #8d8d8d;
+}
+.contact-me-input:focus{
+    border-bottom: 2px solid #7ad71f;
+    transition-duration: 0.25s;
+}
+.message{
+    color: #fff;
+}
+.message a{
+    text-decoration: none;
+    color: #7ad71f;
+    transition-duration: 0.25s;
+}
+.message a:hover{
+    text-decoration: underline;
+    transition-duration: 0.25s;
+}
+.contact-me-button-container{
+    text-align: end;
+}
+.contact-me-button{
+    margin: 0.5em 0;
+    padding: 0.5em;
+    font-size: 0.9em;
+    color: #7ad71f;
+    background: #252627;
+    border: #7ad71f 1px solid;
+    border-radius: 0.25em;
+    transition-duration: 0.25s;
+    cursor: pointer
+}
+
+.contact-me-button:hover{
+    color: #252627;
+    background: #7ad71f;
+    transition-duration: 0.25s;
+}
+.contact-me-map-pointer{
+    transform: translateX(-100%) translateY(-100%);
+    width: 4em;
+}

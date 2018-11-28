@@ -1,0 +1,29 @@
+.pagination-wrapper{
+    width: 100%;
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-selector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25em;
+    color: #fff;
+    border-radius: 2px;
+    border: 2px solid #7ad71f;
+    height: 1.5em;
+    width: 1.5em;
+    margin: 0 0.25em;
+    font-family: sans-serif;
+    transition-duration: 0.25s;
+    cursor: pointer;
+}
+.page-active{
+    background: #7ad71f;
+}
+.page-selector:hover{
+    transition: 0.25s ease-in-out; 
+    background: #7ad71f;
+}

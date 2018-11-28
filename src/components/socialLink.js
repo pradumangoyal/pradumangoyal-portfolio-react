@@ -8,7 +8,7 @@ export default class extends Component {
         href={this.props.link}
         className={`social-link center-it  ${this.props.site}`}
       >
-        <i class={`fab ${this.props.icon}`} />
+        <i className={`fab ${this.props.icon}`} />
       </a>
     )
   }

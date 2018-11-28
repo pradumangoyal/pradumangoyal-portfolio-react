@@ -1,0 +1,111 @@
+.insert-blog{
+    position: relative;
+    bottom: -1em;
+    animation-name: blog-insertion;
+    transition-timing-function: ease-in;
+    animation-duration: 0.33s;
+    transform: translateY(-1em);
+}
+.blog-wrapper{
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.blog-container{
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    overflow-y: auto;
+    min-width: 40em;
+    max-width: 100em;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-left: 1px #7ad71f solid;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.blog-header{
+    display: flex;
+    align-items: flex-end;
+    background-size: 100% 100% !important;
+    width: calc(100% + 4em);
+    margin-left: -2em;
+    border-bottom: 1px solid #7ad71f;
+    min-height: 10em;
+    opacity: 0.95;
+}
+.blog-title{
+    display: flex !important;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0.5em;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 2em;
+    color: #fff;
+}
+.blog-author{
+    font-size: 0.5em;
+    color: #fff;
+}
+.blog-date{
+    font-size: 0.5em;
+    display: flex;
+    align-items: flex-end;
+}
+.blog-tags-wrapper{
+    margin-top: 0.5em;
+}
+.blog-tag{
+    display: inline-block;
+    font-family: sans-serif;
+    margin: 0 0.25em;
+    background: #181818;
+    border: none;
+    color: #fff;
+    border-radius: 2.5px;
+    padding: 0.2em;
+    cursor: default;
+    transition-duration: 0.25s;
+    margin-top: 0.25em
+}
+.blog-tag:hover{
+    opacity: 0.85;
+    transition-duration: 0.25s;
+}
+.blog-content-container{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1em;
+    line-height: 1.25em;
+    color: white;
+    font-family: sans-serif;
+}
+.blog-content-container a{
+    text-decoration: none;
+    color: #7ad71f;
+}
+.blog-content-container img{
+    display: block;
+    max-width: 80% !important;
+    max-height: 25em !important;
+    margin: 0.5em auto;
+}
+.blog-content-container blockquote{
+    padding: 0.5em;
+    background: rgb(96, 155, 247);
+    border-left: 2px solid rgb(43, 95, 185);
+    color: #fff;
+    padding-left: 0.25em;
+}
+
+@keyframes blog-insertion {
+    from{transform: translateY(0)}
+    to{
+        transform: translateY(-1em)
+    }
+}

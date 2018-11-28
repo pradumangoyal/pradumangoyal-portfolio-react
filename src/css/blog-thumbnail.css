@@ -1,0 +1,104 @@
+.blog-thumbnail-container{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 2em;
+    height: 18em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -2em;
+    animation-name: blog-insertion;
+    transition-timing-function: ease-in;
+    animation-duration: 0.75s;
+    transform: translateY(-2em);
+}
+.blog-thumbnail{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    text-decoration: none;
+}
+.blog-image{
+    background-repeat: no-repeat !important;
+    background-size:100% 11em !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.blog-thumbnail-text{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    width: 100%;
+    height: 4em;
+    background:#181818;
+    transition-duration: 0.5s;
+}
+.blog-thumbnail-text-hover{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    width: 100%;
+    background:#181818;
+    transition-duration: 0.5s;
+    height: 8em;
+    transition-duration: 0.5s;
+}
+.blog-thumbnail-title{
+    color: #fff;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+.blog-thumbanil-time{
+    color: #fff;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    font-family: sans-serif;
+}
+.blog-thumbnail-title-container{
+    height: 4em;
+}
+.blog-thumbnail-desc-container{
+    color: #fff;
+    padding: 0 0.5em;
+    font-family: sans-serif;
+    font-size: 0.75em;
+    display: none;
+}
+.blog-thumbnail-desc-container-hover{
+    color: #fff;
+    padding: 0 0.5em;
+    font-family: sans-serif;
+    font-size: 0.75em;
+    display: block;
+}
+.blog-thumbnail-tags-wrapper{
+    height: calc(100% - 12em);
+}
+.blog-thumbnail-tag{
+    display: inline-block;
+    margin: 0 0.25em;
+    background: #181818;
+    color: #fff;
+    border-radius: 2.5px;
+    padding: 0.2em;
+    transition-duration: 0.25s;
+}
+.blog-thumbnail-tag:hover{
+    color: #7ad71f;
+    transition-duration: 0.25s;
+}
+@keyframes blog-insertion {
+    from{transform: translateY(0)}
+    to{
+        transform: translateY(-2em)
+    }
+}

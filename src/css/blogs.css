@@ -1,0 +1,25 @@
+.blogs-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.blogs-container{
+    min-width: 50em;
+    max-width: 100em;
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+}
+.blog-loading{
+    height: 40em;
+    width: 100%;
+}
+.blogs-list-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}

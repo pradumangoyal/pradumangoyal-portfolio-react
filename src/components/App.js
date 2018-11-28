@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Sidebar from './sidebar'
 import Topobar from './topbar'
 import Home from './home/index'
 import AboutMe from './aboutMe/index'
+import MySetup from './mySetup/index'
+import ContactMe from './contactMe/index'
+import Blogs from './blog/index'
 import NoMatch from './404'
 
 import '../css/app.css'
@@ -16,15 +20,17 @@ class App extends Component {
           <Sidebar />
           <Topobar />
           <div className='main-content-wrapper'>
-            <Switch>
-              <Route exact path='/' component={Home} />
-              <Route path='/work' component={Home} />
-              <Route path='/about' component={AboutMe} />
-              <Route path='/my_setup' component={Home} />
-              <Route path='/contact' component={Home} />
-              <Route path='/blogs' component={Home} />
-              <Route component={NoMatch} />
-            </Switch>
+            {this.props.problem
+              ? <NoMatch />
+              : <Switch>
+                <Route exact path='/' component={Home} />
+                <Route path='/work' component={Home} />
+                <Route path='/about' component={AboutMe} />
+                <Route path='/my_setup' component={MySetup} />
+                <Route path='/contact' component={ContactMe} />
+                <Route path='/blogs' component={Blogs} />
+                <Route component={NoMatch} />
+              </Switch>}
           </div>
 
         </div>
@@ -33,4 +39,10 @@ class App extends Component {
   }
 }
 
-export default App
+function mapStateToProps (state) {
+  return {
+    problem: state.problem
+  }
+}
+
+export default connect(mapStateToProps)(App)
