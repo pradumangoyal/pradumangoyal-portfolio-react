@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import '../../css/work-thumbnail.css'
 
@@ -29,8 +30,11 @@ class MyWork extends Component {
     })
   }
   render () {
+    const { project } = this.props
     return (
-      <div
+      <Link
+        to={`${project.id}`}
+        as='div'
         className='work-thumbnail'
         onMouseOver={this.handleMouseOver}
         onMouseLeave={this.handleMouseLeave}
@@ -39,15 +43,25 @@ class MyWork extends Component {
           <div className='title-button red-button' />
           <div className='title-button yellow-button' />
           <div className='title-button green-button' />
-          <div className='title'>PROJECT TITLE</div>
+          <div className='title'>{project.name}</div>
         </div>
-        <div className='work-thumbnail-content'>
+        <div
+          className='work-thumbnail-content'
+          style={
+            project.thumbnail
+              ? {
+                background: `url('${project.thumbnail}')`
+              }
+              : {}
+          }
+        >
           <div
             className={`work-thumbnail-tags ${this.state.hover && 'work-thumbnail-tags-hover'}`}
           >
-            {['HTML', 'CSS', 'React', 'Django'].map((tag, index) => {
+            {project.stack.map((tag, index) => {
               return (
                 <div
+                  key={index}
                   className='work-thumbnail-tag'
                   style={{
                     background: `${radiantColor[index % radiantColor.length]}`
@@ -58,9 +72,17 @@ class MyWork extends Component {
               )
             })}
           </div>
-          <div className='project-title' />
+          {!project.thumbnail &&
+            <div
+              className='project-title'
+              style={{
+                background: `${radiantColor[radiantColor.length - project.id % radiantColor.length]}`
+              }}
+            >
+              {project.name}
+            </div>}
         </div>
-      </div>
+      </Link>
     )
   }
 }

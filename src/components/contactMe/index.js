@@ -14,77 +14,78 @@ export default class extends Component {
       <Loader>
         <div className='insert-it contact-me-wrapper'>
           <div className='contact-me-container'>
-
             <div className='contact-me-content'>
-              <div>
-                <h2 className='special contact-me-heading'>
-                  <Rubber>Contact</Rubber>&nbsp;<Rubber>me</Rubber>
-                </h2>
-                <span className='message'>
-                  Have any message for me?
-                  {' '}
-                  <a href='mailto:goyal.praduman611@gmail.com'>Mail</a>
-                  {' '}
-                  me or fill the following form
-                </span>
+              <div className='contact-me-content-container'>
+                <div>
+                  <h2 className='special contact-me-heading'>
+                    <Rubber>Contact</Rubber>&nbsp;<Rubber>me</Rubber>
+                  </h2>
+                  <span className='message'>
+                    Have any message for me?
+                    {' '}
+                    <a href='mailto:goyal.praduman611@gmail.com'>Mail</a>
+                    {' '}
+                    me or fill the following form
+                  </span>
 
-                <div className='contact-me-input-container'>
-                  <input
-                    className='half-width contact-me-input'
-                    name='name'
-                    placeholder='Name'
-                    autoComplete='off'
+                  <div className='contact-me-input-container'>
+                    <input
+                      className='half-width contact-me-input'
+                      name='name'
+                      placeholder='Name'
+                      autoComplete='off'
+                    />
+
+                    <input
+                      className='half-width contact-me-input'
+                      name='email'
+                      placeholder='Email'
+                      autoComplete='off'
+                    />
+                  </div>
+                  <div className='contact-me-input-container'>
+                    <input
+                      className='full-width contact-me-input'
+                      name='subject'
+                      placeholder='Subject'
+                      autoComplete='off'
+                    />
+                  </div>
+                  <div className='contact-me-input-container'>
+                    <textarea
+                      className='full-width contact-me-textarea'
+                      name='message'
+                      rows='8'
+                      placeholder='Message'
+                    />
+                  </div>
+                </div>
+                <div className='contact-me-button-container'>
+                  <button className='contact-me-button'>SEND</button>
+                </div>
+                <div className='social-links center-it'>
+                  <SocialLink
+                    icon='fa-facebook-f'
+                    site='fb'
+                    link='https://www.facebook.com/praduman.goyal.11'
+                  />
+                  <SocialLink
+                    icon='fa-instagram'
+                    site='insta'
+                    link='https://www.instagram.com/pradumangoyal/'
+                  />
+                  <SocialLink
+                    icon='fa-linkedin-in'
+                    site='linked-in'
+                    link='https://www.linkedin.com/in/pradumangoyal'
+                  />
+                  <SocialLink
+                    icon='fa-github'
+                    site='github'
+                    link='https://github.com/pradumangoyal'
                   />
 
-                  <input
-                    className='half-width contact-me-input'
-                    name='email'
-                    placeholder='Email'
-                    autoComplete='off'
-                  />
                 </div>
-                <div className='contact-me-input-container'>
-                  <input
-                    className='full-width contact-me-input'
-                    name='subject'
-                    placeholder='Subject'
-                    autoComplete='off'
-                  />
-                </div>
-                <div className='contact-me-input-container'>
-                  <textarea
-                    className='full-width contact-me-textarea'
-                    name='message'
-                    rows='8'
-                    placeholder='Message'
-                  />
-                </div>
-              </div>
-              <div className='contact-me-button-container'>
-                <button className='contact-me-button'>SEND</button>
-              </div>
-              <div className='social-links center-it'>
-                <SocialLink
-                  icon='fa-facebook-f'
-                  site='fb'
-                  link='https://www.facebook.com/praduman.goyal.11'
-                />
-                <SocialLink
-                  icon='fa-instagram'
-                  site='insta'
-                  link='https://www.instagram.com/pradumangoyal/'
-                />
-                <SocialLink
-                  icon='fa-linkedin-in'
-                  site='linked-in'
-                  link='https://www.linkedin.com/in/pradumangoyal'
-                />
-                <SocialLink
-                  icon='fa-github'
-                  site='github'
-                  link='https://github.com/pradumangoyal'
-                />
-
               </div>
             </div>
             <div className='contact-me-map'>

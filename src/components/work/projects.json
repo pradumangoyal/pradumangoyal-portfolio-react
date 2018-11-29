@@ -1,0 +1,130 @@
+{
+    "list": [
+        {
+            "id": 1,
+            "name": "Stream",
+            "stack": [
+                "ReactJS",
+                "Redux",
+                "Django",
+                "DRF"
+            ],
+            "period": "July,2018 - Oct.,2018",
+            "thumbnail": "https://github.com/pradumangoyal/stream/raw/master/images/controller.png",
+            "type": "Self Project",
+            "description": "Stream is a webapp using Django, DRF, and Django Channels as backend and using React as frontend which can be use to stream live music on a PC, while you can control the song using other PC's connected by LAN, in a network."
+        },
+        {
+            "id": 2,
+            "name": "Stream",
+            "stack": [
+                "ReactJS",
+                "Redux",
+                "Django",
+                "DRF"
+            ],
+            "period": "July,2018 - Oct.,2018",
+            "thumbnail": "",
+            "type": "Self Project",
+            "description": "Stream is a webapp using Django, DRF, and Django Channels as backend and using React as frontend which can be use to stream live music on a PC, while you can control the song using other PC's connected by LAN, in a network."
+        },
+        {
+            "id": 3,
+            "name": "Stream",
+            "stack": [
+                "ReactJS",
+                "Redux",
+                "Django",
+                "DRF"
+            ],
+            "period": "July,2018 - Oct.,2018",
+            "thumbnail": "",
+            "type": "Self Project",
+            "description": "Stream is a webapp using Django, DRF, and Django Channels as backend and using React as frontend which can be use to stream live music on a PC, while you can control the song using other PC's connected by LAN, in a network."
+        },
+        {
+            "id": 4,
+            "name": "Stream",
+            "stack": [
+                "ReactJS",
+                "Redux",
+                "Django",
+                "DRF"
+            ],
+            "period": "July,2018 - Oct.,2018",
+            "thumbnail": "https://github.com/pradumangoyal/stream/raw/master/images/controller.png",
+            "type": "Self Project",
+            "description": "Stream is a webapp using Django, DRF, and Django Channels as backend and using React as frontend which can be use to stream live music on a PC, while you can control the song using other PC's connected by LAN, in a network."
+        },
+        {
+            "id": 5,
+            "name": "Stream",
+            "stack": [
+                "ReactJS",
+                "Redux",
+                "Django",
+                "DRF"
+            ],
+            "period": "July,2018 - Oct.,2018",
+            "thumbnail": "https://github.com/pradumangoyal/stream/raw/master/images/controller.png",
+            "type": "Self Project",
+            "description": "Stream is a webapp using Django, DRF, and Django Channels as backend and using React as frontend which can be use to stream live music on a PC, while you can control the song using other PC's connected by LAN, in a network."
+        },
+        {
+            "id": 6,
+            "name": "Stream",
+            "stack": [
+                "ReactJS",
+                "Redux",
+                "Django",
+                "DRF"
+            ],
+            "period": "July,2018 - Oct.,2018",
+            "thumbnail": "",
+            "type": "Self Project",
+            "description": "Stream is a webapp using Django, DRF, and Django Channels as backend and using React as frontend which can be use to stream live music on a PC, while you can control the song using other PC's connected by LAN, in a network."
+        },
+        {
+            "id": 7,
+            "name": "Stream",
+            "stack": [
+                "ReactJS",
+                "Redux",
+                "Django",
+                "DRF"
+            ],
+            "period": "July,2018 - Oct.,2018",
+            "thumbnail": "https://github.com/pradumangoyal/stream/raw/master/images/controller.png",
+            "type": "Self Project",
+            "description": "Stream is a webapp using Django, DRF, and Django Channels as backend and using React as frontend which can be use to stream live music on a PC, while you can control the song using other PC's connected by LAN, in a network."
+        },
+        {
+            "id": 8,
+            "name": "Stream",
+            "stack": [
+                "ReactJS",
+                "Redux",
+                "Django",
+                "DRF"
+            ],
+            "period": "July,2018 - Oct.,2018",
+            "thumbnail": "",
+            "type": "Self Project",
+            "description": "Stream is a webapp using Django, DRF, and Django Channels as backend and using React as frontend which can be use to stream live music on a PC, while you can control the song using other PC's connected by LAN, in a network."
+        },
+        {
+            "id": 9,
+            "name": "Stream",
+            "stack": [
+                "ReactJS",
+                "Redux",
+                "Django",
+                "DRF"
+            ],
+            "period": "July,2018 - Oct.,2018",
+            "thumbnail": "https://github.com/pradumangoyal/stream/raw/master/images/controller.png",
+            "type": "Self Project",
+            "description": "Stream is a webapp using Django, DRF, and Django Channels as backend and using React as frontend which can be use to stream live music on a PC, while you can control the song using other PC's connected by LAN, in a network."
+        }
+    ]
+}

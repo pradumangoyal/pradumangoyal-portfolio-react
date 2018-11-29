@@ -27,7 +27,7 @@ class BlogThumbnail extends Component {
     return (
       <div className='blog-thumbnail-container'>
         <Link
-          to={`/blogs/${blog.ID}`}
+          to={`${blog.ID}`}
           as='div'
           className='blog-thumbnail'
           onMouseOver={this.handleMouseOver}
