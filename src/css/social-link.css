@@ -1,11 +1,10 @@
 .social-link{
-    margin: 0.05em 0;
-    width: 50%;
+    margin: 0.5em;
     height: 1.5em;
     display: block;
     color: #4d4d4e;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.25em;
     transition-duration: 0.75s;
 }
 .social-link:hover{

@@ -1,0 +1,77 @@
+.work-thumbnail{
+    width: 22em;
+    height: 13em;
+    position: relative;
+    bottom: -2em;
+    animation-name: blog-insertion;
+    transition-timing-function: ease-in;
+    animation-duration: 0.75s;
+    transform: translateY(-2em);
+    margin: 2em 0;
+}
+.title-bar{
+    background: #181818;
+    display: flex;
+    align-items: center;
+    height: 1em;
+}
+.title-button{
+    height: 0.75em;
+    width: 0.75em;
+    display: inline-block;
+    border-radius: 50%;
+}
+.red-button{
+    margin-left: 7px;
+    background: #ff5f57;
+}
+.yellow-button{
+    margin-left: 4px;
+    background: #ffbd2e;
+}
+.green-button{
+    margin-left: 4px;
+    background: #28ca41;
+}
+.title{
+    display: inline-block;
+    color: #fff;
+    height: 100%;
+    margin: auto;
+    transform: translatex(-30px)
+}
+.work-thumbnail-content{
+    height: 100%;
+    background: url('https://github.com/pradumangoyal/stream/raw/master/images/controller.png');
+    background-size: 100% 100%;
+}
+.work-thumbnail-tags{
+    width: 100%;
+    height: 0;
+    background: rgba(0,0,0,0.75);
+    overflow: hidden;
+    transition-duration: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.work-thumbnail-tags-hover{
+    transition-timing-function: ease-in;
+    animation-duration: 1s;
+    transition-duration: 1s;
+    animation-name: work-tags;
+    height: 100%;
+}
+.work-thumbnail-tag{
+    background: #28ca41;
+    display: inline-block;
+    padding: 0.25em;
+    margin: 0.25em;
+    border-radius: 4px;
+}
+@keyframes work-tags {
+    from{height: 0}
+    to{
+        height: 100%;
+    }
+}

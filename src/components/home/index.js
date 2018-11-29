@@ -61,12 +61,6 @@ export default class extends Component {
                 </div>
               </div>
             </div>
-            <div className='home-photo-container'>
-              <img
-                src='https://www.lexellweb.com/wp-content/uploads/2018/08/Planet-Uke-Profile-Image-for-Sidebar-Circular.png'
-                alt='my-profile'
-              />
-            </div>
           </div>
         </div>
       </Loader>

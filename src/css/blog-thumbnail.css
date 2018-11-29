@@ -6,12 +6,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    bottom: -2em;
-    animation-name: blog-insertion;
-    transition-timing-function: ease-in;
-    animation-duration: 0.75s;
-    transform: translateY(-2em);
 }
 .blog-thumbnail{
     display: flex;
@@ -22,6 +16,12 @@
     height: 100%;
     cursor: default;
     text-decoration: none;
+    position: relative;
+    bottom: -2em;
+    animation-name: blog-insertion;
+    transition-timing-function: ease-in;
+    transform: translateY(-2em);
+    animation-duration: 0.75s;
 }
 .blog-image{
     background-repeat: no-repeat !important;
@@ -55,13 +55,13 @@
 .blog-thumbnail-title{
     color: #fff;
     font-size: 1.5em;
-    font-family: sans-serif;
+    font-family: "San Francisco";
 }
 .blog-thumbanil-time{
     color: #fff;
     font-size: 0.75em;
     line-height: 1.5em;
-    font-family: sans-serif;
+    font-family: "San Francisco";
 }
 .blog-thumbnail-title-container{
     height: 4em;
@@ -69,14 +69,14 @@
 .blog-thumbnail-desc-container{
     color: #fff;
     padding: 0 0.5em;
-    font-family: sans-serif;
+    font-family: "San Francisco";
     font-size: 0.75em;
     display: none;
 }
 .blog-thumbnail-desc-container-hover{
     color: #fff;
     padding: 0 0.5em;
-    font-family: sans-serif;
+    font-family: "San Francisco";
     font-size: 0.75em;
     display: block;
 }

@@ -3,12 +3,12 @@ import { connect } from 'react-redux'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Sidebar from './sidebar'
-import Topobar from './topbar'
 import Home from './home/index'
 import AboutMe from './aboutMe/index'
 import MySetup from './mySetup/index'
 import ContactMe from './contactMe/index'
 import Blogs from './blog/index'
+import Work from './work/index'
 import NoMatch from './404'
 
 import '../css/app.css'
@@ -18,13 +18,12 @@ class App extends Component {
       <Router>
         <div className='app'>
           <Sidebar />
-          <Topobar />
           <div className='main-content-wrapper'>
             {this.props.problem
               ? <NoMatch />
               : <Switch>
                 <Route exact path='/' component={Home} />
-                <Route path='/work' component={Home} />
+                <Route path='/work' component={Work} />
                 <Route path='/about' component={AboutMe} />
                 <Route path='/my_setup' component={MySetup} />
                 <Route path='/contact' component={ContactMe} />

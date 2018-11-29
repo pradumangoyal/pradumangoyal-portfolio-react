@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import GoogleMapReact from 'google-map-react'
 
 import PGLoader from '../pgLoader'
+import SocialLink from '../socialLink'
 import Loader from '../loader'
 import Rubber from '../rubber'
 
@@ -61,6 +62,29 @@ export default class extends Component {
               </div>
               <div className='contact-me-button-container'>
                 <button className='contact-me-button'>SEND</button>
+              </div>
+              <div className='social-links center-it'>
+                <SocialLink
+                  icon='fa-facebook-f'
+                  site='fb'
+                  link='https://www.facebook.com/praduman.goyal.11'
+                />
+                <SocialLink
+                  icon='fa-instagram'
+                  site='insta'
+                  link='https://www.instagram.com/pradumangoyal/'
+                />
+                <SocialLink
+                  icon='fa-linkedin-in'
+                  site='linked-in'
+                  link='https://www.linkedin.com/in/pradumangoyal'
+                />
+                <SocialLink
+                  icon='fa-github'
+                  site='github'
+                  link='https://github.com/pradumangoyal'
+                />
+
               </div>
             </div>
             <div className='contact-me-map'>

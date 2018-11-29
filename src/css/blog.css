@@ -44,7 +44,7 @@
     width: 100%;
     padding: 0 0.5em;
     display: inline-block;
-    font-family: sans-serif;
+    font-family: "San Francisco";
     font-size: 2em;
     color: #fff;
 }
@@ -62,7 +62,7 @@
 }
 .blog-tag{
     display: inline-block;
-    font-family: sans-serif;
+    font-family: "San Francisco";
     margin: 0 0.25em;
     background: #181818;
     border: none;
@@ -83,7 +83,7 @@
     font-size: 1em;
     line-height: 1.25em;
     color: white;
-    font-family: sans-serif;
+    font-family: "San Francisco";
 }
 .blog-content-container a{
     text-decoration: none;
