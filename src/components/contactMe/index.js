@@ -153,12 +153,12 @@ export default class extends Component {
                   />
                 </div>
                 <div className={`contact-me-info-container ${this.state.info.type === 'success' && 'successful'} ${this.state.info.type === 'error' && 'errorful'}`}>
-                  {this.state.info.details.success && this.state.info.details.success.map(x => {return <li>{x}</li>})}
+                  {this.state.info.details.success && this.state.info.details.success.map((x, index) => {return <li key={index}>{x}</li>})}
                   {this.state.info.details.error && <li>{this.state.info.details.error}</li>}
-                  {this.state.info.details.name && this.state.info.details.name.map(x => {return <li>Name: {x}</li>})}
-                  {this.state.info.details.email && this.state.info.details.email.map(x => {return <li>Email: {x}</li>})}
-                  {this.state.info.details.subject && this.state.info.details.subject.map(x => {return <li>Subject: {x}</li>})}
-                  {this.state.info.details.message && this.state.info.details.message.map(x => {return <li>Message: {x}</li>})}
+                  {this.state.info.details.name && this.state.info.details.name.map((x, index) => {return <li key={index}>Name: {x}</li>})}
+                  {this.state.info.details.email && this.state.info.details.email.map((x, index) => {return <li key={index}>Email: {x}</li>})}
+                  {this.state.info.details.subject && this.state.info.details.subject.map((x, index) => {return <li key={index}>Subject: {x}</li>})}
+                  {this.state.info.details.message && this.state.info.details.message.map((x, index) => {return <li key={index}>Message: {x}</li>})}
                 </div>
                 <div className='contact-me-button-container'>
                   <button className='contact-me-button' onClick={this.handleSubmit}>SEND</button>
