@@ -10,6 +10,9 @@ export function urlEnsureCSRF () {
 export function urlContactMe () {
   return `/contact_me/`
 }
+export function urlContactMeId (id) {
+  return `/contact_me/${id}`
+}
 export function urlIsAdmin () {
   return `/is_admin/`
 }

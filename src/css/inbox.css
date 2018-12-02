@@ -1,0 +1,55 @@
+.inbox-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "San Francisco";
+}
+.inbox-container{    
+    min-width: 20em;
+    width: 80%;
+    max-width: 60em;
+}
+.message-wrapper{
+    border:2px solid #7ad71f;
+    border-left: 0;
+    border-right: 0;
+    margin: 0.25em 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.25em;
+    color: #7ad71f;
+    height: auto;
+    transition-duration: 0.5s;
+}
+.message-wrapper a{
+    color: #7ad71f;
+    transition-duration: 0.25s;
+}
+.message-wrapper a:hover{
+    color: #fff;
+    transition-duration: 0.25s;
+}
+.message-heading{
+    text-decoration: underline;
+    color: #fff;
+}
+.message-heading-view{
+    color: #fff;
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+.message-heading-view:hover{
+    text-decoration: underline;
+    transition-duration: 0.25s;
+}
+.message-top{
+    display: flex;
+    justify-content: space-between;
+}
+.message-readed{
+    background: #86af49;
+}

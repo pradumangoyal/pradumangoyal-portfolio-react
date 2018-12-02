@@ -48,7 +48,7 @@ export default class extends Component {
       let data = {
         name: this.state.name,
         email: this.state.email,
-        subject: this.state.email,
+        subject: this.state.subject,
         message: this.state.message,
         'g-recaptcha-response': this.state["g-recaptcha-response"]
       }

@@ -10,6 +10,7 @@ import AboutMe from './aboutMe/index'
 import MySetup from './mySetup/index'
 import ContactMe from './contactMe/index'
 import Blogs from './blog/index'
+import Inbox from './inbox'
 import Work from './work/index'
 import NoMatch from './404'
 
@@ -49,7 +50,7 @@ class App extends Component {
                 <Route path='/my_setup' component={MySetup} />
                 <Route path='/contact' component={ContactMe} />
                 <Route path='/blogs' component={Blogs} />
-                {this.state.admin && <Route path='/inbox' component={MySetup} />}
+                {this.state.admin && <Route path='/inbox' component={Inbox} />}
                 <Route component={NoMatch} />
               </Switch>}
           </div>
