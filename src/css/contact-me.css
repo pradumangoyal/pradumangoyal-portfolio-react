@@ -49,6 +49,7 @@
 .contact-me-input-container{
     margin: 0.5em 0;
     display: flex;
+    justify-content: flex-end;
 }
 .half-width{
     width: 50%;
@@ -75,7 +76,7 @@
     box-sizing: border-box;
     border: 0;
     line-height: 1.5em;
-    font-size: 1.25em !important;
+    font-size: 1em !important;
     border-radius: 2px;
     background: #37393b;
     color: #8d8d8d;
@@ -119,4 +120,27 @@
 .contact-me-map-pointer{
     transform: translateX(-100%) translateY(-100%);
     width: 4em;
+}
+.contact-me-info-container{
+    box-sizing: border-box;
+    padding: 0.25em;
+    padding-left: 0.5em;
+    border-radius: .28571429rem;
+    transition-duration: 0.25s;
+}
+.successful{
+    padding: 0.25em;
+    padding-left: 0.5em;
+    transition-duration: 0.25s;
+    box-shadow: 0 0 0 1px #a3c293 inset, 0 0 0 0 transparent;
+    background-color: #fcfff5;
+    color: #2c662d;
+}
+.errorful{
+    padding: 0.25em;
+    padding-left: 0.5em;
+    transition-duration: 0.25s;
+    box-shadow: 0 0 0 1px #e0b4b4 inset, 0 0 0 0 transparent;
+    background-color: #fff6f6;
+    color: #9f3a38;
 }

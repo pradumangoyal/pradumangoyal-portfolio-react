@@ -4,3 +4,15 @@ export function urlBlogList () {
 export function urlBlog (id) {
   return `${urlBlogList()}${id}/`
 }
+export function urlEnsureCSRF () {
+  return `/ensure_csrf/`
+}
+export function urlContactMe () {
+  return `/contact_me/`
+}
+export function urlIsAdmin () {
+  return `/is_admin/`
+}
+export function urlLogin () {
+  return `/api-auth/login/`
+}

@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import axios from 'axios'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
+import {urlEnsureCSRF, urlIsAdmin} from '../urls'
 import Sidebar from './sidebar'
 import Home from './home/index'
 import AboutMe from './aboutMe/index'
@@ -13,6 +15,25 @@ import NoMatch from './404'
 
 import '../css/app.css'
 class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      admin: false
+    }
+  }
+
+  componentDidMount(){
+    axios.get(urlEnsureCSRF())
+    axios.get(urlIsAdmin())
+    .then(res => {
+      this.setState({admin: true})
+    })
+    .catch(err => {
+      this.setState({
+        admin: false
+      })
+    })
+  }
   render () {
     return (
       <Router>
@@ -28,6 +49,7 @@ class App extends Component {
                 <Route path='/my_setup' component={MySetup} />
                 <Route path='/contact' component={ContactMe} />
                 <Route path='/blogs' component={Blogs} />
+                {this.state.admin && <Route path='/inbox' component={MySetup} />}
                 <Route component={NoMatch} />
               </Switch>}
           </div>
